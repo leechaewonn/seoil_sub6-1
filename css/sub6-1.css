@@ -314,7 +314,7 @@ table{
     padding-top: 0 !important;
 }
 
-.table_box{
+.table_box, .table_box2{
     width: 60%;
     margin: 0 auto;
     height: auto;
@@ -416,9 +416,10 @@ table{
  .p2{
     display: none;
  }
- .sub_contents1{
+ .sub_contents1, .sub_contents2{
     display: none;
  }
+ 
 
 /*top버튼*/
 .fixed_box{
@@ -429,6 +430,11 @@ table{
     display: inline-block;
     z-index: 999999;
 }
+
+.table_box2{
+    display: none;
+}
+
 
 @media(max-width:1709px){
 	input[id="menuicon"]+label, .slidebar{
@@ -466,7 +472,7 @@ table{
         width: 100%;
         margin: 0 auto;
     }
-    .table_box{
+    .table_box, .table_box2{
         width: 80%;
         margin: 0 auto;
     }
@@ -520,7 +526,7 @@ table{
     .contents2{
         margin-bottom: 150px;
     }
-    .table_box{
+    .table_box, .table_box2{
         width: 80%;
         margin: 0 auto;
     }
@@ -603,9 +609,11 @@ table{
         width: 80%;
         margin: 0 auto;
         padding: 70px 0;
-        margin-bottom: 50px;
         margin-top: 50px;
         line-height: 27px;
+    }
+    .table_box2{
+        display: block;
     }
     .sub_inner{
         width: 90%;
@@ -631,6 +639,15 @@ table{
     }
     .contents2 p{
         padding: 100px 0 30px;
+    }
+    .sub_contents2{
+        display: block;
+    }
+    .sub_info{
+        display: none;
+    }
+    .contents2{
+        background: none;
     }
    }
    @media(max-width:559px){
@@ -681,9 +698,9 @@ table{
        font-size: 12px;
     }
 }
-@media(max-width:356px){
-   table{
-        border: none;
+@media(max-width:376px){
+    .table_box2{
+        width: 90%;
     }
 }
    @media(max-width:339px){
